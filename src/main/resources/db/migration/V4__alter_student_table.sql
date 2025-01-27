@@ -1,0 +1,2 @@
+ALTER TABLE Student
+    ADD COLUMN Age INT;

@@ -29,6 +29,9 @@ public class StudentEntity {
   @Column(nullable = false, unique = true, length = 150)
   private String email;
 
+  @Column
+  private Integer age;
+
   @OneToMany(mappedBy = "studentEntity", cascade = CascadeType.PERSIST, orphanRemoval = true)
   @JsonManagedReference
   private List<EnrollmentEntity> enrollmentEntities = new ArrayList<>();

@@ -18,7 +18,7 @@ import java.util.List;
 @Data
 public class CourseEntity {
 
-  @Id()
+  @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "courseid")
   private Long courseId;

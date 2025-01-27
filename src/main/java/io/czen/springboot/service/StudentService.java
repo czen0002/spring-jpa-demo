@@ -22,7 +22,7 @@ public class StudentService {
 
   public StudentEntity createStudent(Student student) {
     StudentEntity studentEntity =
-        StudentEntity.builder().name(student.getName()).email(student.getEmail()).build();
+        StudentEntity.builder().name(student.getName()).email(student.getEmail()).age(student.getAge()).build();
     return studentRepository.save(studentEntity);
   }
 
